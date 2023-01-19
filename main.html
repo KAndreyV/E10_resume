@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Резюме Кудимов А. В.</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="photo">
+                <img id="my_photo" src="media\Pa-lYNAK3l0SLgwxEInhr6CzTTP8FIA1PtSLZPDPtdicTXI8W2DOBYqAThz0EMSCTj813_PXf-kN8dLMhf3Y7u7W.jpg" alt="Photo of author resume"/>
+            </div>
+            <div class="container with-contacts">
+                <h2>Кудимов А. В.</h2>
+                <p>&#9742 <a href="tel:+79011111111">+7 (901) 111-11-11</a></p>
+                <p>&#9993 <a href="mailto:rex.kudimov@mail.ru">rex.kudimov@mail.ru</a></p>
+            </div>
+        </header>
+
+        <main>
+            <button type="button" class="collapsible">О себе</button>
+                <div class="collapsible_container">
+                    <p>Я Кудимов Андрей, мне 20 лет, сейчас я студент. Люблю познавать новое и приобретать навыки.
+                    Кроме учебы увлекаюсь игрой на гитаре, люблю спорт. Считаю, что за IT будущее, поэтому пытаюсь в нем развиваться.
+                    </p>
+                </div>
+
+            <button type="button" class="collapsible">Образование</button>
+                <div class="collapsible_container">
+                    <dl>
+                        <dt>Высшее образование:</dt>
+                            <dd><a href="https://mai.ru/?referer=https%3A%2F%2Fyandex.ru%2F">МАИ</a></dd>
+                            <dd><p>С 2020г и по сей день обучаюсь в Московском авиационном институте на направлении Биотехнические системы и технологии.</p></dd>
+                        <dt>Курсы:</dt>
+                            <dd><a href="https://skillfactory.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=none_sf_all_yandex_cpc_general_brand-poisk_none_spb_sf_all&utm_content=all&utm_term=63656573%7Cskillfactory%7C38714656022%7C38714656022%7C%7C%7Cpremium%7C1%7Csearch%7Cnone%7CКовров%7Cdesktop%7C13185070525%7C4907517465&etext=&_openstat=ZGlyZWN0LnlhbmRleC5ydTs2MzY1NjU3MzsxMzE4NTA3MDUyNTt5YW5kZXgucnU6cHJlbWl1bQ&yclid=18440192279013020638">Skillfactory</a></dd>
+                            <dd><p>Прохожу курс fullstack-разработчика. Изучил основы backend-разработки. Изучаю frontend составляющую сайта.</p></dd>
+                        <dt>Доп образование в институте</dt>
+                            <dd><p>Параллельно основному образованию и онлайн курсам постигаю мир суперкомпьютеров.</p></dd>
+                    </dl>
+                </div>
+
+            <button type="button" class="collapsible">Опыт работы</button>
+                <div class="collapsible_container">
+                    <ol>
+                        <li>Разнорабочий (несколько месяцев)</li>
+                        <li>Конструктор на заводе (2 месяца)</li>
+                    </ol>
+                </div>
+
+            <button type="button" class="collapsible">Навыки использования разных языков программирования</button>
+                <div class="collapsible_container">
+                    <p>HTML</p>
+                    <div class="skillbar_container">
+                      <div class="skills html">90%</div>
+                    </div>
+
+                    <p>CSS</p>
+                    <div class="skillbar_container">
+                      <div class="skills css">80%</div>
+                    </div>
+
+                    <p>JavaScript</p>
+                    <div class="skillbar_container">
+                      <div class="skills js">65%</div>
+                    </div>
+
+                    <p>Python</p>
+                    <div class="skillbar_container">
+                      <div class="skills python">60%</div>
+                    </div>
+                </div>
+
+            <button type="button" class="collapsible">Интересуюсь</button>
+                <div class="collapsible_container">
+                    <ul>
+                        <li>Знаниями в различных сферах</li>
+                        <li>Спорт</li>
+                        <li>Фото</li>
+                        <li>Играми</li>
+                        <li>Лего</li>
+                        <li>Музыка</li>
+                    </ul>
+                </div>
+        </main>
+    </body>
+</html>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
